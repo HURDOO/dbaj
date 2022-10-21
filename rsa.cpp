@@ -70,7 +70,8 @@ int main()
 {
     // 소수 p, q를 구한다.
     vector<int> primes = prime();
-    // srand(15);
+    srand(15);
+    // srand((unsigned int) time(NULL));
     int p = primes[rand() % primes.size()];
     int q = primes[rand() % primes.size()];
     // int p = 17, q = 13;
